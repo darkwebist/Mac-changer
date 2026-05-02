@@ -1,58 +1,57 @@
 # MAC Changer
 
-This Python script allows you to temporarily change the MAC address of a network interface on Linux systems.
+Ushbu Python skripti Linux tizimlarida tarmoq interfeysi (Wi-Fi yoki Ethernet) MAC manzilini vaqtincha o‘zgartirish imkonini beradi.
 
-## Installation
+## O‘rnatish
 
-To install and run the script, follow these steps:
+Skriptni o‘rnatish va ishlatish uchun quyidagi amallarni bajaring:
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/darkwebist/Mac-changer.git
-    ```
-
-2.  **Navigate into the project directory:**
-    ```bash
-    cd Mac-changer
-    ```
-
-3.  **Make the script executable:**
-    ```bash
-    chmod +x mac_changer.py
-    ```
-
-## Usage
-
-To change the MAC address of a network interface, run the script with `sudo` privileges and specify the interface and the new MAC address.
-
-```bash
-sudo python3 mac_changer.py -i <interface> -m <new_mac>
+1. **Repositoriyani klon qiling:**
+   ```bash
+   git clone https://github.com/darkwebist/Mac-changer.git
 ```
 
-Example:
+1. Loyiha papkasiga o‘ting:
+   ```bash
+   cd Mac-changer
+   ```
+2. Skriptni bajariladigan qilib belgilang:
+   ```bash
+   chmod +x mac_changer.py
+   ```
+
+Ishlatish
+
+MAC manzilni o‘zgartirish uchun skriptni sudo huquqi bilan ishga tushiring va interfeys hamda yangi MAC manzilni ko‘rsating.
+
+```bash
+sudo python3 mac_changer.py -i <interfeys> -m <yangi_mac>
+```
+
+Misol:
 
 ```bash
 sudo python3 mac_changer.py -i eth0 -m 02:11:22:33:44:55
 ```
 
-Required Arguments:
+Majburiy argumentlar:
 
-· -i or --interface: The network interface (e.g., eth0, wlan0).
-· -m or --mac: The new MAC address (format: XX:XX:XX:XX:XX:XX).
+· -i yoki --interface: Tarmoq interfeysi nomi (masalan, eth0, wlan0)
+· -m yoki --mac: Yangi MAC manzil (format: XX:XX:XX:XX:XX:XX)
 
-Requirements
+Talablar
 
-· Linux operating system
-· Python 3.6+
-· ip command (usually part of iproute2 package)
-· sudo privileges (required to change MAC address)
+· Linux operatsion tizimi
+· Python 3.6 yoki undan yangisi
+· ip buyrug‘i (odatda iproute2 paketi tarkibida)
+· sudo huquqi (MAC manzilni o‘zgartirish uchun zarur)
 
-Important Notes
+Muhim eslatmalar
 
-· The script must be run with sudo or as root.
-· The MAC address change is temporary and will revert to the original after a system reboot.
-· Avoid using invalid MAC addresses like 00:00:00:00:00:00. A safe example is 02:11:22:33:44:55.
+· Skript faqat sudo bilan ishga tushirilishi kerak.
+· MAC manzil o‘zgarishi vaqtinchalik – tizim qayta yuklanganda zavod manzili qaytadi.
+· Yaroqsiz MAC manzillarni (masalan 00:00:00:00:00:00) ishlatmang. Xavfsiz misol: 02:11:22:33:44:55.
 
-Author
+Muallif
 
 @DarkWebist
