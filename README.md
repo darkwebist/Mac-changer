@@ -19,7 +19,7 @@ Skriptni o‘rnatish va ishlatish uchun quyidagi amallarni bajaring:
    chmod +x mac_changer.py
    ```
 
-Ishlatish
+##Ishlatish
 
 MAC manzilni o‘zgartirish uchun skriptni sudo huquqi bilan ishga tushiring va interfeys hamda yangi MAC manzilni ko‘rsating.
 
@@ -38,19 +38,19 @@ Majburiy argumentlar:
  · -i yoki --interface: Tarmoq interfeysi nomi (masalan, eth0, wlan0)
  · -m yoki --mac: Yangi MAC manzil (format: XX:XX:XX:XX:XX:XX)
 
-Talablar
+##Talablar
 
  · Linux operatsion tizimi
  · Python 3.6 yoki undan yangisi
  · ip buyrug‘i (odatda iproute2 paketi tarkibida)
  · sudo huquqi (MAC manzilni o‘zgartirish uchun zarur)
 
-Muhim eslatmalar
+##Muhim eslatmalar
 
  · Skript faqat sudo bilan ishga tushirilishi kerak.
  · MAC manzil o‘zgarishi vaqtinchalik – tizim qayta yuklanganda zavod manzili qaytadi.
  · Yaroqsiz MAC manzillarni (masalan 00:00:00:00:00:00) ishlatmang. Xavfsiz misol: 02:11:22:33:44:55.
 
-Muallif
+##Muallif
 
 @DarkWebist
