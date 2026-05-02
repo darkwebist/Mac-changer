@@ -35,21 +35,21 @@ sudo python3 mac_changer.py -i eth0 -m 02:11:22:33:44:55
 
 Majburiy argumentlar:
 
-· -i yoki --interface: Tarmoq interfeysi nomi (masalan, eth0, wlan0)
-· -m yoki --mac: Yangi MAC manzil (format: XX:XX:XX:XX:XX:XX)
+ · -i yoki --interface: Tarmoq interfeysi nomi (masalan, eth0, wlan0)
+ · -m yoki --mac: Yangi MAC manzil (format: XX:XX:XX:XX:XX:XX)
 
 Talablar
 
-· Linux operatsion tizimi
-· Python 3.6 yoki undan yangisi
-· ip buyrug‘i (odatda iproute2 paketi tarkibida)
-· sudo huquqi (MAC manzilni o‘zgartirish uchun zarur)
+ · Linux operatsion tizimi
+ · Python 3.6 yoki undan yangisi
+ · ip buyrug‘i (odatda iproute2 paketi tarkibida)
+ · sudo huquqi (MAC manzilni o‘zgartirish uchun zarur)
 
 Muhim eslatmalar
 
-· Skript faqat sudo bilan ishga tushirilishi kerak.
-· MAC manzil o‘zgarishi vaqtinchalik – tizim qayta yuklanganda zavod manzili qaytadi.
-· Yaroqsiz MAC manzillarni (masalan 00:00:00:00:00:00) ishlatmang. Xavfsiz misol: 02:11:22:33:44:55.
+ · Skript faqat sudo bilan ishga tushirilishi kerak.
+ · MAC manzil o‘zgarishi vaqtinchalik – tizim qayta yuklanganda zavod manzili qaytadi.
+ · Yaroqsiz MAC manzillarni (masalan 00:00:00:00:00:00) ishlatmang. Xavfsiz misol: 02:11:22:33:44:55.
 
 Muallif
 
