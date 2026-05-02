@@ -24,15 +24,15 @@ parser = argparse.ArgumentParser(description="MAC-manzil o'zgartiruvchi script")
 def change_mac(interface, new_mac):
      text = f"[+] {interface} o'chirilmoqda..."
      print("\033[94m" + text + "\033[0m")
-     subprocess.run(["sudo","ip","link","set","dev",interface,"down"],check=True)
+     subprocess.run(["ip","link","set","dev",interface,"down"],check=True)
      time.sleep(2)
      text = f"[+] MAC-manzil {new_mac} ga  o'zgartirilmoqda..."
      print("\033[94m" + text + "\033[0m")
-     subprocess.run(["sudo","ip","link","set","dev",interface,"address",new_mac],check=True)
+     subprocess.run(["ip","link","set","dev",interface,"address",new_mac],check=True)
      time.sleep(2)
      text = f"[+] {interface} qayta yoqilmoqda..."
      print("\033[94m" + text + "\033[0m")
-     subprocess.run(["sudo","ip","link","set","dev",interface,"up"],check=True)
+     subprocess.run(["ip","link","set","dev",interface,"up"],check=True)
      time.sleep(2)
      
 def current_mac(interface):
