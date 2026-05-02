@@ -8,7 +8,8 @@ Skriptni o‘rnatish va ishlatish uchun quyidagi amallarni bajaring:
 
 1. **Repositoriyani klon qiling:**
    ```bash
-   git clone https://github.com/darkwebist/Mac-changer.git```
+   git clone https://github.com/darkwebist/Mac-changer.git
+   ```
 
 1. Loyiha papkasiga o‘ting:
    ```bash
